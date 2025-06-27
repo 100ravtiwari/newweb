@@ -1,0 +1,35 @@
+.botm {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .botm {
+        display: inline-block;
+        height: 30%;
+        width: 100%;
+        background-color: #EFEFEF;
+        color: #04152d;
+    }
+
+    .connectme {
+        display: flex;
+        margin-left: 10%;
+        margin-bottom: 15px;
+        height: 100%;
+        font-size: 50px;
+
+    }
+
+    .connectme a {
+        text-decoration: none;
+        color: #04152d;
+    }
+
+    .connectme h3 {
+        margin-left: 5%;
+        margin-top: 6%;
+        font-size: 17px;
+
+    }
+
+}

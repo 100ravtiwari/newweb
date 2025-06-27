@@ -1,0 +1,281 @@
+.fpmain {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+}
+
+.navmain {
+  background-color: #fff;
+  height: 13vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  border-bottom: 15px solid #ccc;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 11;
+}
+
+.menubtn1 {
+  width: 15vw;
+  height: 9vh;
+  padding: 5% 10%;
+  margin-left: 100px;
+  mix-blend-mode: multiply;
+
+}
+
+.menubtn {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  margin: 0 10%;
+
+}
+
+.menuitems {
+  display: flex;
+  font-size: 27px;
+  gap: 47px;
+  list-style: none;
+}
+
+.menuitems li a {
+  text-decoration: none;
+  color: #04152D;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navmain {
+    background-color: #d0860e;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menubtn1 {
+    width: 25vw;
+    height: 9vh;
+    padding: 5% 10%;
+    margin-left: 25px;
+    mix-blend-mode: multiply;
+
+  }
+
+  .menuitems {
+    display: none;
+  }
+
+  .menubtn {
+    display: inline-block;
+  }
+
+  .phn {
+    background-color: blueviolet;
+    height: 50%;
+  }
+
+}
+
+.landmain {
+  background: #EFEFEF;
+  height: 87vh;
+  display: flex;
+  color: #04152D;
+}
+
+.half {
+  height: 100%;
+  width: 60%;
+  padding: 15% 10%;
+}
+
+.htitle {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: Acme;
+
+}
+
+#hanim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.9s linear forwards;
+}
+
+@keyframes moveup {
+  1% {
+    opacity: 0;
+    transform: translateY(-110px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+
+    transform: translateX(0px);
+
+  }
+}
+
+.description {
+
+  font-size: 30px;
+  font-family: Quicksand;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+#desanim {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: moveright 0.9s linear forwards;
+}
+
+@keyframes moveright {
+  1% {
+    opacity: 0;
+    transform: translateX(-110px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+
+    transform: translateX(0px);
+
+  }
+}
+
+.contactBtn {
+  height: 9vh;
+  width: 15vw;
+  background: linear-gradient(149deg, #FFCB08 0%, #FF474E 100%);
+  color: var(--color-text);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.contactBtn:hover {
+  background: linear-gradient(149deg, #030302 0%, #fff 100%);
+  color: rgb(252, 5, 5);
+  cursor: pointer;
+}
+
+.ohalf {
+  height: 100%;
+  width: calc(100% - 60%);
+  padding: 11% 2% 8% 8%;
+}
+
+.menubtnn {
+  width: 100%;
+  border-radius: 50%;
+  animation-name: anam;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes anam {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 20px);
+
+  }
+
+  100% {
+    transform: translate(0, 0px);
+
+  }
+}
+
+.wp {
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .landmain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .half {
+    background-color: #FF474E;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .htitle {
+    margin-top: 5px;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    background-color: burlywood;
+    font-size: 18px;
+    font-family: Quicksand;
+    font-weight: bold;
+    margin-bottom: 6%;
+  }
+
+  .contactBtn {
+    padding: 10px;
+    width: 65%;
+    background: linear-gradient(149deg, #FFCB08 0%, #FF474E 100%);
+    color: var(--color-text);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .ohalf {
+    background-color: #FFCB08;
+    height: 50%;
+    width: 100%;
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center horizontally */
+
+    padding: 0;
+
+
+  }
+
+  .menubtnn {
+    background-color: #04152D;
+    animation-name: anam2;
+    width: 50%;
+    border-radius: 50%;
+
+  }
+}

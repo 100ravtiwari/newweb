@@ -1,0 +1,199 @@
+@import "../../vars.css";
+
+.conmain{
+     width: 100%;
+    background-color: #EFEFEF;
+    color: #04152D;
+}
+.conc{
+    height: 14vh;
+    width: 100%;
+    font-size: 80px;
+    font-weight: 900;
+    font-family: Acme;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.splitcont{
+     height: 90vh;
+    display: flex;
+}
+.conimg{
+     width: 50%;
+  
+}
+.conusimg{
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.conbtnn{
+    height: 75vh;
+    width: 35vw;
+    mix-blend-mode: multiply;
+
+}
+.soicon{
+    display: flex;
+ justify-content: center;
+ font-size: xx-large;
+}
+.soicon> * {
+    margin-right: 2vw;
+}
+.soicon a {
+    color: inherit; 
+     text-decoration: none; /* Remove underline */
+}
+
+.soicon a:hover {
+    color: inherit; 
+ }
+
+.conpag{
+     width: 50%;
+}
+.formpg{
+    background-image: url('../../assets/CTM.gif');
+    height: 93%;
+    width: 60%;
+    border-radius: 15px;
+    margin:1% auto;
+ }
+.hdd{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    font-family: Acme;
+ 
+}
+.formpg p{
+    margin-left: 20px;
+    margin-top: 5%;
+    color: gainsboro;
+}
+input{
+    margin-left: 20px;
+    margin-bottom: 2px;
+    width: 88%;
+    height: 9%;
+    background-color: #191923;
+    color: #fff;
+    font-size: 14px;
+     border-radius: 6px;
+  }
+  input::placeholder {
+    color: #b1b1b1;
+   }
+   #message{
+    margin-left: 20px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: azure;
+    font-weight: bold;
+    }
+   .sbform{
+    background: linear-gradient(149deg, #FFCB08 0%, #FF474E 100%);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 12px 35px;
+    border-radius: 20px;
+    margin-left: 20px;
+    width: 90%;
+    cursor: none;
+    opacity: 0.6;
+   }
+  
+   @media (max-width: 768px) {
+    .conmain{
+     min-height: 100%;
+    }
+    .conc{
+        height: 14vh;
+        width: 100%;
+        font-size: 60px;
+        font-weight: 900;
+        font-family: Acme;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    .splitcont{
+        height: auto;
+        width: 100%;
+       display: flex;
+       flex-direction: column;
+   }
+   .conimg{
+    height: auto;
+     width: 100%;
+ 
+}
+.conusimg{
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.conbtnn{
+    height: 35vh;
+    width: 65vw;
+    mix-blend-mode: multiply;
+
+}
+.conpag{
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+.formpg{
+   background-color: #04152D;
+   height: auto;
+   width: 80%;
+   border-radius: 15px;
+   margin:1% auto;
+   margin-bottom: 35px;
+}
+input{
+    margin-left: 20px;
+    margin-bottom: 2px;
+    width: 80%;
+    height: 50px;
+    background-color: #191923;
+    color: #fff;
+    font-size: 14px;
+     border-radius: 6px;
+     padding: 10px ;
+  }
+  input::placeholder {
+    color: #b1b1b1;
+    }
+  #message{
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: azure;
+    font-weight: bold;
+    }
+   .sbform{
+    background: linear-gradient(149deg, #FFCB08 0%, #FF474E 100%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px 25px;
+    border-radius: 20px;
+    margin-left: 20px;
+    width: 80%;
+    margin-bottom: 25px;
+   }
+   }

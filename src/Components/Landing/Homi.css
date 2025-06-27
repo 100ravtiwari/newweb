@@ -1,0 +1,204 @@
+.hommain {
+  background: #EFEFEF;
+  height: calc(110vh - 85px);
+  display: flex;
+  color: #04152D;
+  scroll-snap-align: center;
+}
+
+.half {
+  height: 100%;
+  width: 60%;
+  padding: 5%;
+}
+
+.htitle {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: Acme;
+
+}
+
+.description {
+
+  font-size: 30px;
+  font-family: Quicksand;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.ohalf {
+  height: 100%;
+  width: calc(100% - 60%);
+  padding: 7% 8%;
+}
+
+.menubtnn {
+  width: 100%;
+  border-radius: 50%;
+  animation-name: anam;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes anam {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 60px);
+
+  }
+
+  100% {
+    transform: translate(0, 0px);
+
+  }
+}
+
+.wp {
+  z-index: 100;
+
+}
+
+.wp input {
+  color: black;
+}
+
+.contactBttpd {
+  cursor: pointer;
+  display: inline-block;
+  background: linear-gradient(149deg, #FFCB08, #FF474E);
+  color: #f0f0e3;
+  width: 40%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.contactBttpd::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -200%;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(149deg, #FFCB08, #FF474E, #FFCB08, #FF474E);
+  animation: slide-bg 5s linear infinite;
+  z-index: -1;
+}
+
+@keyframes slide-bg {
+  0% {
+    left: -200%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hommain {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+  }
+
+  .contactBttpd {
+    display: none;
+  }
+
+  .half {
+    background-color: #d7d3d3;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+    padding: 0 10%;
+    position: relative;
+    z-index: 4;
+  }
+
+  .htitle {
+    margin-top: 1px;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    background-color: #EFEFEF;
+    font-size: 22px;
+    margin-left: 4%;
+    font-family: Quicksand;
+    font-weight: bold;
+    margin-bottom: 22%;
+  }
+
+  .contactBtn {
+    height: 20%;
+    padding: 10px;
+    width: 65%;
+    background: linear-gradient(149deg, #FFCB08 0%, #FF474E 100%);
+    color: var(--color-text);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .ohalf {
+    background-color: #EFEFEF;
+    height: 65%;
+    width: 100%;
+    order: 1;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    z-index: 4;
+  }
+
+  .menubtnn {
+    width: 45%;
+    border-radius: 50%;
+    margin: 90px 20px 10px 90px;
+    animation-name: anamres;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    z-index: 3;
+  }
+
+  @keyframes anamres {
+    0% {
+      transform: translate(0, 0px);
+    }
+
+    50% {
+      transform: translate(0, 20px);
+    }
+
+    100% {
+      transform: translate(0, 0px);
+    }
+  }
+}

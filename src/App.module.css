@@ -1,0 +1,11 @@
+/* global.css */
+/* For WebKit browsers (Chrome, Safari, Edge) */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #FF474E #fff; /* Fallback for Firefox */
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+

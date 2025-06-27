@@ -1,0 +1,143 @@
+.main{
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      position: fixed;
+      border-bottom: 15px solid #ccc;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  
+     z-index: 11;      
+ }
+ .phn-opt{
+  display: none;
+ }
+ .closebtn1{
+  display: none;
+ }
+.menubtn1 {
+    width: 15vw;
+  height: 9vh;
+   padding: 5% 10%;
+   margin-left: 100px;
+   mix-blend-mode: multiply;
+ 
+}
+.menubtn{
+   display: none;
+  }
+
+.menu{
+    display: flex;
+    margin: 0 10%;
+
+}
+.menuitems{
+    display: flex;
+    font-size: 27px;
+    gap: 47px;
+    list-style: none;
+}
+.menuitems li a{
+    text-decoration: none;
+    color: #04152D;
+    font-weight: bold;
+}
+
+      .menuitems li a:hover {
+      border-bottom: 6px solid black;
+       }
+    
+  
+  
+  /* Navv.css */
+  @media (max-width: 768px) {
+    .main {
+      background-color: #EFEFEF;
+      height: 100px;
+      width: 100vw;
+      border-bottom: 10px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      z-index: 10;
+    }
+    .phn-opt {
+      margin-top: 100px;
+      width: 100%;
+      display: block;
+      background-color: #04152D;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      z-index: 99;
+    }
+    .phn-off {
+      display: none;
+    }
+    .menuitemsphn li {
+      list-style-type: none;
+      color: #fff;
+      font-size: 2em;
+      color: beige;
+      margin-bottom: 1.1em;
+    }
+    .menuitemsphn li a {
+      text-decoration: none;
+      color: beige;
+    }
+    #look {
+      margin-top: 40%;
+    }
+    .show {
+      display: block;
+    }
+    .hidden {
+      display: none;
+    }
+    .menubtn1 {
+      width: 25vw;
+      height: 9vh;
+      padding: 5% 10%;
+      margin-left: 25px;
+      mix-blend-mode: multiply;
+      z-index: 20;
+    }
+    .closebtn1 {
+      display: block;
+      width: 100%;
+      z-index: 30;
+    }
+    .closebtn1 img {
+      object-fit: cover;
+      mix-blend-mode: color-burn;
+    }
+    .menuitems {
+      display: none;
+    }
+    .circmen {
+      background-color: rgb(2, 17, 79);
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      z-index: 100;
+    }
+    .menubtn {
+      display: inline-block;
+      z-index: 101;
+    }
+    .phn {
+      background-color: blueviolet;
+      height: 50%;
+      z-index: 5;
+    }
+  }
+  
